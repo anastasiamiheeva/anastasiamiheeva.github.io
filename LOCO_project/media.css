@@ -1,0 +1,447 @@
+@media screen and (max-width: 1366px) {
+    .first-page-wrap {
+        background: -webkit-gradient(linear, left top, right top, color-stop(30%, black), color-stop(30%, white));
+        background: linear-gradient(to right, black 30%, white 30%);
+    }
+
+    .header-blackside {
+        width: 20%;
+    }
+
+    .second-page__info {
+        height: 75vh;
+    }
+
+    .third-page__info {
+        height: 55vh; 
+    }
+
+    .main-text-wrap {
+        width: 38%;
+    }
+
+}
+
+
+@media screen and (max-width: 1280px) {
+    .first-page-wrap {
+        background: -webkit-gradient(linear, left top, right top, color-stop(30%, black), color-stop(30%, white));
+        background: linear-gradient(to right, black 30%, white 30%); 
+    }
+
+    .header-blackside {
+        width: 20%;
+    }
+
+    .first-page-main__img {
+        width: 35%;  
+    }
+
+    .socials__img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .first-page__socials {  
+        width: 12%; 
+    }
+
+    .main-text-wrap {
+        width: 40%;
+    }
+
+    .second-page__info {
+        height: 70vh;
+        width: 45%;
+    }
+
+    .value-box {
+        padding: 10px;
+    }
+
+    .addtocart {
+        padding: 10px 43px;
+    }
+
+    .third-page__info {
+        height: 40vh; 
+    }
+
+    .third-page__info-box .value-box {
+        display: none;
+    }
+
+    .third-page__info-box .addtocart-box {
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+
+    .second-page__title,
+    .third-page__title  {
+        font-size: 30px;
+    }
+    
+    .second-page__subtitle,
+    .third-page__subtitle {
+        font-size: 12px;
+    } 
+}
+
+@media screen and (max-width: 1024px) {
+
+    .first-page-main__img {
+        width: 38%;
+    }
+
+    .main-text__title {
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    .socials__img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .first-page__btn-next {
+        padding: 0 25px;  
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .header-blackside__logo {
+        font-size: 24px;
+    }
+
+    .first-page-main__img {
+        width: 38%;
+        margin-right: 20px;
+    }
+
+    .main-text__title {
+        font-size: 60px;
+        line-height: 55px;
+    }
+
+    .first-page__btn-next {
+        padding: 0 20px;
+        font-size: 10px;
+    }
+
+    .page-link {
+        font-size: 10px;
+    }
+
+    .first-page__arrow {
+        display: none;
+    }
+
+    .socials__img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .scrool {
+        width: 30px;
+        height: 40px;
+    }
+
+    .second-page__color {
+        width: 50%;
+    }
+
+    .value-box {
+        padding: 5px;
+    }
+
+    .addtocart {
+        padding: 5px 20px;
+    }
+
+    .second-page__arrow {
+        width: 180px;
+    }
+
+    .second-page__info {
+        width: 50%;
+    }
+
+    .third-page__info {
+        height: 35vh;
+    }
+
+    .third-page__info-box {
+        padding: 20px;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-blackside__language,
+    .first-page-main,
+    .first-page__socials-wrap,
+    .first-page-main__img,
+    .main-text-wrap {
+        display: none;
+    }
+
+    .header {
+        background: #fff;
+    }
+
+    .header-blackside__logo {
+        color: #000;
+        font-size: 30px;
+    }
+    
+    .header__menu-burger {
+        height: 70px;
+        width: 70px;
+    }
+
+    .burger-line {
+        width: 26.4px;
+        height: 2.61px;
+    }
+    
+    .first-page-content {
+        background: url(./images/pete-bellis-432867-unsplash-mob.png) center no-repeat;
+        background-size: cover;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; 
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+    }
+
+    .first-page-mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .first-page-mobile__title {
+        background: transparent;
+        border: 0;
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 51px;
+        margin: 0 auto;
+        white-space: pre-line;
+        text-align: left;
+    }
+
+    .first-page-mobile__arrow {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .second-page__content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+
+    }
+
+    .second-page__title,
+    .third-page__title  { 
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .second-page__subtitle, 
+    .third-page__subtitle  {
+        font-size: 12px;
+        line-height: 10px;
+        letter-spacing: 0.07em;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .color {
+        width: 28px;
+        height: 28px;
+    }
+
+    .second-page__color_pink {
+        width: 35px;
+        height: 35px;
+    }
+
+    .second-page__price {
+        font-size: 30px;
+        line-height: 28px;
+    }
+    
+    .second-page__img-bags,
+    .second-page__link,
+    .value-box {
+        display: none;
+    }
+
+    .second-page__img-mobbag {
+        display: block;
+        width: 60%;
+    }
+
+    .second-page__info {
+        width: 70%;
+        height: 50vh;
+    }
+
+    .second-page__info-box {
+        height: 100%;
+        padding: 16px 30px;
+    }
+
+    .addtocart-box {
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+
+    .addtocart {
+        padding: 10px 34px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 0;
+    }
+
+    .third-page {
+        background: -webkit-gradient(linear, left top, right top, color-stop(27%, #EBE3D8), color-stop(25%, black), color-stop(35%, black), color-stop(32%, #EBE3D8));
+        background: linear-gradient(to right, #EBE3D8 27%, black 25%, black 35%, #EBE3D8 32%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .third-page__img {
+        width: 95%;
+        transform: translateY(15%);
+        -webkit-transform: translateY(15%);
+        -moz-transform: translateY(15%);
+        -ms-transform: translateY(15%);
+        -o-transform: translateY(15%);
+}
+
+    .third-page__info {
+        width: 70%;
+    }
+
+    .third-page__link {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+    }
+
+    .third-page__link .btn-other {
+        white-space: pre-line;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .third-page__arrow-one {
+        display: none;
+    }
+
+    .third-page__arrow-two {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .second-page__info {
+        width: 80%;
+        height: 50vh;
+        max-height: 380px;
+        
+    }
+
+    .second-page__info-box {
+        height: 100%;
+        padding: 16px 30px;
+    }
+    
+    .second-page__title,
+    .third-page__title  { 
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .second-page__subtitle, 
+    .third-page__subtitle  {
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.07em;
+    }
+
+    .paragraph {
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+    .second-page__color {
+        width: 55%;
+    }
+
+    .color {
+        width: 23px;
+        height: 23px;
+    }
+
+    .second-page__color_pink {
+        width: 29px;
+        height: 29px;
+    }
+
+    .second-page__price {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .second-page__img-bags,
+    .second-page__link,
+    .value-box {
+        display: none;
+    }
+
+    .second-page__img-mobbag {
+        display: block;
+        width: 60%;
+        min-width: 350px;
+    }
+
+    .third-page__info {
+        width: 80%;
+    }
+
+   
+}
