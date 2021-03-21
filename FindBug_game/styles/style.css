@@ -1,0 +1,227 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url("../images/Background.png");
+  background-size: cover;
+  max-height: 1024px;
+  min-height: 550px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.start-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  height: 85vh;
+}
+
+.complexity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 10px; 
+  width: 50%;
+  height: 60vh;
+}
+
+.complexity__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 40vh;
+}
+
+.header__title {
+font-style: normal;
+font-weight: bold;
+font-size: 57px;
+line-height: 67px;
+color: #FFF;
+}
+
+.header__text {
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+line-height: 22px;
+color: #FFF;
+}
+
+.nav__item {
+  background: none;
+  border: none;
+  color: #FFF;
+  font: normal bold 50px/59px "Roboto";
+  margin: 0;
+  outline: none;
+  text-align: left; 
+  display: block;
+  padding-left: 40px; 
+  cursor: pointer;
+}
+
+.btn-start {
+  background: #D62B2E;
+  border: none;
+  border-radius: 7px;
+  color: #FFF;
+  font: normal bold 32px/37px "Roboto";
+  margin: 0;
+  width: 352px;
+  height: 95px;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav__item:hover {
+  background: url("../images/Rectangle.png") no-repeat;
+  background-position: left;
+  opacity: 0.8;
+  top: 0;
+  right: 275px; 
+}  
+
+@keyframes jump {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+.btn-start:hover {
+  animation: jump 1s;
+	opacity: 0.9;
+	box-shadow: inset 0 0 0 3px #fd1848;
+}
+
+.start-menu::before {
+  content: "";
+  background-image: url("../images/card.png");
+  position: absolute;
+  top: 45vh;
+  right: 158px;
+  width: 218px;
+  height: 341px;
+  transform: rotate(40deg);
+  z-index: 1; 
+  border-radius: 9px;
+}
+
+.start-menu::after {
+  content: "";
+  background-image: url("../images/card.png");
+  position: absolute;
+  top: 40vh;
+  right: 338px;
+  width: 218px;
+  height: 341px;
+  transform: rotate(12deg);
+  border-radius: 9px; 
+}
+
+/*js*/
+
+.checked {
+  background: url("../images/Rectangle.png") no-repeat;
+  background-position: left;
+  top: 0;
+  right: 275px;
+} 
+
+.three-card {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  
+  width: 60%;
+}
+
+.six-card {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+.ten-card {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.flip-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 218px;
+  height: 341px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  perspective: 1000px;
+}
+
+.flip-card-front,
+.flip-card-back,
+.winner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background: url("../images/losingCard.png") no-repeat;
+  transform: rotateY(180deg); 
+}
+
+.flip-card-back {
+  background: url("../images/card.png") no-repeat;
+}
+
+.flip-card-back:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  transform: rotate(-3.08deg); 
+  transition: .2s ease;
+}
+
+.on-click {
+  transform: rotateY(180deg);
+}
+
+.winner {
+  background: url("../images/bugCard.png") no-repeat;
+}
