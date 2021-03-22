@@ -5,6 +5,12 @@ const gameContainer = document.querySelector('.container');
 
 const gameField = document.createElement('div');
 
+const gameLevel = [
+  {level: 'simple', numberOfcard: 3, nameOfClass: 'three-card'},
+  {level: 'medium', numberOfcard: 6, nameOfClass: 'six-card'},
+  {level: 'difficult', numberOfcard: 10, nameOfClass: 'ten-card'}
+]
+
 const stopGame = () => {
   gameContainer.appendChild(startMenu);
   gameField.remove();
@@ -23,7 +29,7 @@ const chooseLevel = () => {
   const deactive = () => {
     navItems.forEach(btn => btn.classList.remove('checked'))
   }
-};
+}
 
 const getCards = () => {
   const card = document.createElement('div');
@@ -37,14 +43,15 @@ const getCards = () => {
   gameField.appendChild(card); 
   card.appendChild(cardFront);
   card.appendChild(cardBack);
-};
+}
 
 const getGameField = (obj) => {
+
   gameContainer.appendChild(gameField)
   obj.numberOfCard && gameField.classList.add(obj.nameOfClass)
 
   for (let i = 0; i < obj.numberOfCard; i++) {
-    getCards()
+    getCards();
   }
 
   const flipCard = document.querySelectorAll('.flip-card');
@@ -65,33 +72,21 @@ const getGameField = (obj) => {
       }
     })
   })
-};
+}
 
 const btnStartOnClick = () => {
   startMenu.remove();
   const levels = {};
 
-  navItems.forEach(btn => {
-    if(btn.classList.contains('simple') && btn.classList.contains('checked')) {
-      levels.nameOfClass = 'three-card';
-      levels.numberOfCard = 3;
+  navItems.forEach((btn, i) => {
+    if(btn.classList.contains(gameLevel[i].level) && btn.classList.contains('checked')) {
+      levels.nameOfClass = gameLevel[i].nameOfClass;
+      levels.numberOfCard = gameLevel[i].numberOfcard;
     }
-    if(btn.classList.contains('medium') && btn.classList.contains('checked')) {
-      levels.nameOfClass = 'six-card';
-      levels.numberOfCard = 6;
-    }
-    if(btn.classList.contains('difficult') && btn.classList.contains('checked')) {
-      levels.nameOfClass = 'ten-card';
-      levels.numberOfCard = 10; 
-    }
-  })
-  getGameField(levels)
-};
+  });
+  getGameField(levels);
+}
 
-btnStart.addEventListener('click', btnStartOnClick)
+btnStart.addEventListener('click', btnStartOnClick);
 
-
-
-
-
-chooseLevel()
+chooseLevel();
